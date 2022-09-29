@@ -6,7 +6,7 @@
         <small class="fst-italic">Fecha de publicación: {{ date }}</small>
       </div>
       <figure>
-        <img :src="cover" alt="cover" />
+        <b-img :src="cover" alt="cover" fluid/>
       </figure>
       <div class="actions row justify-content-center">
         <a class="btn btn-secondary btn-post" :href="slug">Ir al post</a>

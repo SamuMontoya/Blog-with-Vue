@@ -8,7 +8,7 @@
         </div>
         <p class="mt-3">{{ post.description }}</p>
         <figure>
-            <b-img :src="post.cover" :alt="post.cover" fluid />
+            <b-img :src="post.cover" fluid-grow :alt="post.cover" />
             <i><small><figcaption class="text-right mt-1 text-secondary">Cover - {{ post.title }}</figcaption></small></i>
         </figure>
         <VueMarkdown>{{ post.content }}</VueMarkdown>
