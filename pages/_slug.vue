@@ -1,5 +1,5 @@
 <template>
-    <b-container class="mt-4">
+    <b-container class="mt-5">
       <article>
         <h1>{{ post.title }}</h1>
         <div>

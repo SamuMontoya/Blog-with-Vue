@@ -1,6 +1,6 @@
 <template>
     <div class="border border-secondary m-2 p-3">
-      <h3>{{ title }}</h3>
+      <NuxtLink class="text-dark" :to="slug"><h3>{{ title }}</h3></NuxtLink>
       <div>
         <p class="fw-semibold mb-0">Por {{ author }}</p>
         <small class="fst-italic">Fecha de publicación: {{ date }}</small>
@@ -9,7 +9,7 @@
         <b-img :src="cover" alt="cover" fluid/>
       </figure>
       <div class="actions row justify-content-center">
-        <a class="btn btn-secondary btn-post" :href="slug">Ir al post</a>
+        <NuxtLink  class="btn btn-secondary btn-post" :to="slug">Ir al post</NuxtLink>
       </div>
       <p>{{ description }}</p>
     </div>

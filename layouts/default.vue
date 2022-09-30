@@ -3,7 +3,9 @@
     <header>
       <div>
         <b-navbar toggleable="lg" type="light" variant="light" fixed="top">
-          <b-navbar-brand href="/">Samu's Blog</b-navbar-brand>
+          <b-navbar-brand href="/">
+            <img style="width:2.3rem" src="../assets/logo.png" class="d-inline-block align-top" alt="Kitten" />
+            Samu's Blog</b-navbar-brand>
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
@@ -23,7 +25,7 @@
         </b-navbar>
       </div>
     </header>
-    <div style="margin-top:4rem">
+    <div style="margin-top:4.5rem">
         <Nuxt />
     </div>
   </div>
