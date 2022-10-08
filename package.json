@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
     "airtable": "^0.11.5",
     "babel-runtime": "^6.26.0",
     "bootstrap": "^4.6.1",
