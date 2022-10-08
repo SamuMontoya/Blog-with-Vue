@@ -20,14 +20,18 @@ export default {
   name: "IndexPage",
   data() {
     return {
-      articles: [
-        {
-          title:'My First Post',
-          slug: 'my-first-post',
-          date: new Date()
-        }
-      ],
+      articles: [ ],
     };
   },
+  async mounted() {
+    const url = `http://localhost:9999/.netlify/functions/articles`
+    const { articles } = await this.$http.$get(url)
+    this.articles = articles.map((a) => ({
+      ...a,
+      author: a['author-name'][0],
+      date: new Date(a.updated),
+      cover: a.cover[0]?.thumbnails.large.url,
+    }))
+  }
 };
 </script>
