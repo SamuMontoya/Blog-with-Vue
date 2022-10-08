@@ -3,7 +3,7 @@
       <NuxtLink class="text-dark" :to="slug"><h3>{{ title }}</h3></NuxtLink>
       <div class="mb-4">
         <p class="fw-semibold mb-0"><b>Por {{ author }}</b></p>
-        <small><i>Fecha de publicación: {{ date }}</i></small>
+        <small><i>Fecha de publicación: {{ date.toLocaleDateString() }}</i></small>
       </div>
       <figure>
         <b-img :src="cover" alt="cover" fluid/>
