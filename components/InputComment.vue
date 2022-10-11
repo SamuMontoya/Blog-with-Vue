@@ -4,7 +4,7 @@
         <b-form-input v-model="name" name="name" type="text" />
         <label for="email" class="mt-2">Email</label>
         <b-form-input v-model="email" name="email" type="email" />
-        <label for="content">Comment</label>
+        <label for="content" class="mt-2">Comment</label>
         <b-form-textarea name="content" cols="30" rows="4" placeholder="Your comment here..." v-model="content"></b-form-textarea>
         <b-button type="submit" block class="mt-3 mb-2">Comment</b-button>
     </b-form>
