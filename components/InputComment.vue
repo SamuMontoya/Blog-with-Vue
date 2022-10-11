@@ -1,5 +1,5 @@
 <template>
-    <b-form @submit="submit" class="pb-2 mb-5">
+    <b-form @submit.prevent="submit" class="pb-2 mb-5">
         <label for="name">Name</label>
         <b-form-input v-model="name" name="name" type="text" />
         <label for="email" class="mt-2">Email</label>
